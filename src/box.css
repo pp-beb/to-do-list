@@ -1,0 +1,56 @@
+.container{
+    width: 25%;
+    aspect-ratio: 3/4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:rgb(199, 146, 146);
+    box-shadow: 0 15px 30px rgb(102, 61, 61);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    color: rgb(216, 206, 206);
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px white;
+}
+
+.addIcon{
+    color: rgb(216, 206, 206);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.addIcon:hover{
+background-color:rgb(144, 106, 106) ;
+color: white;
+}
+
+.container > div {
+    flex: 1;
+   text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.input{
+flex: 1;
+visibility: hidden;
+width: 100%;
+}
+
+input{
+    width: 180%;
+    position: relative;
+    right: 42%;
+    height: 100%;
+}
