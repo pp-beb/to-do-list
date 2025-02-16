@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 3%;
 }
 
 .title{
@@ -53,4 +54,76 @@ input{
     position: relative;
     right: 42%;
     height: 100%;
+}
+
+.slot1A, .slot2A, .slot3A, .slot4A, .slot5A {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    visibility: hidden; 
+}
+
+.slot1, .slot2, .slot3, .slot4, .slot5 {
+    flex: 5;
+    width: 70%;
+    text-align: start;
+}
+
+.tick1, .cross1, .tick2, .cross2, .tick3, .cross3, .tick4, .cross4, .tick5, .cross5 {
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    width: 15%;
+
+}
+
+.tick1, .tick2, .tick3, .tick4, .tick5{
+    position: absolute;
+    right: 15%;
+}
+
+.cross1, .cross2, .cross3, .cross4, .cross5{
+    position: absolute;
+    right: 0%;
+}
+
+.tick1:hover, .tick2:hover, .tick3:hover, .tick4:hover, .tick5:hover {
+    background-color: lightgreen;
+}
+
+.cross1:hover, .cross2:hover, .cross3:hover, .cross4:hover, .cross5:hover {
+    background-color: lightcoral;
+}
+
+.alert{
+    visibility: hidden;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bin1, .bin2, .bin3, .bin4, .bin5{
+    position: absolute;
+    left: 3%;
+    border-radius: 30%;
+    cursor: pointer;
+    color: white;
+}
+
+.bin1:hover, .bin2:hover, .bin3:hover, .bin4:hover, .bin5:hover{
+    background-color:coral;
+}
+
+.credits{
+    position: absolute;
+    bottom: -0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
 }
