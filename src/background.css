@@ -3,3 +3,10 @@
     height:100vb;
     background: linear-gradient(45deg, blanchedalmond,coral, burlywood);
 }
+
+@media  (max-width:768px){
+    .background{
+        height:110vb;
+        width: 110%;
+    }
+}
